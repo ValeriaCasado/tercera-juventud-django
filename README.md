@@ -1,3 +1,7 @@
-To build the docker image, bash script:
+To build the docker image:
 
-`docker build --build-arg DJANGO_SECRET_KEY='' -t tj-app .`
+`docker build -t tj-app .`
+
+To run the container:
+We need to pass the secret key, remember to backspace the "!" characters.
+`docker run --env-file .env  -p 8000:8000  tj-app`
