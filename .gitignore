@@ -3,3 +3,4 @@ tercerajuventud/__pycache__
 tercerajuventud/migrations
 db.sqlite3
 venv/
+build_image.sh
