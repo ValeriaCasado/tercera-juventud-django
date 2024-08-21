@@ -2,3 +2,4 @@
 tercerajuventud/__pycache__
 tercerajuventud/migrations
 db.sqlite3
+venv/
