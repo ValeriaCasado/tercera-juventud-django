@@ -1,0 +1,6 @@
+steps:
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['build', '-t', 'europe-southwest1-docker.pkg.dev/${PROJECT_ID}/tercera-juventud-django/tercera-juventud-django:latest', '.']
+
+- name: 'gcr.io/cloud-builders/docker'
+  args: [ 'push', '-a', 'europe-southwest1-docker.pkg.dev/${PROJECT_ID}/docker/tercera-juventud-django']
