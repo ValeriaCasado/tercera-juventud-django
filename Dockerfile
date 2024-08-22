@@ -8,7 +8,7 @@ COPY requirements.txt /app
 
 RUN apt-get update
 
-RUN pip3 install -r requirements.txt --no-cache-dir
+RUN pip3 install -r requirements.txt
 
 COPY . /app 
 

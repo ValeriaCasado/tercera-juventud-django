@@ -27,7 +27,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.getenv('DJANGO_SECRET_KEY') ## TODO: Need to pass this to docker somehow
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.getenv('DJANGO_DEBUG') == 'True' if os.getenv('DJANGO_DEBUG') else False
+DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
@@ -35,41 +35,29 @@ ALLOWED_HOSTS = ['*']
 # Application definition
 
 INSTALLED_APPS = [
+    'whitenoise.runserver_nostatic',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.messages',
     'django.contrib.sessions',
     'django.contrib.contenttypes',
+    'django.contrib.staticfiles'
 ]
-
-if DEBUG:
-    INSTALLED_APPS += [
-        'livesync',
-        'django.contrib.staticfiles'
-    ]
-
-
-if not DEBUG:
-    INSTALLED_APPS += [
-        'django.contrib.staticfiles'
-    ]
-
     
 MIDDLEWARE = [
+    "django.middleware.security.SecurityMiddleware",
+    "whitenoise.middleware.WhiteNoiseMiddleware",
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
-    'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'django.middleware.clickjacking.XFrameOptionsMiddleware'
 ]
 
+STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 
-if DEBUG:
-    MIDDLEWARE += [
-        'livesync.core.middleware.DjangoLiveSyncMiddleware'
-    ]
 
 ROOT_URLCONF = 'tercerajuventud.urls'
 
@@ -148,7 +136,7 @@ STATIC_URL = 'static/'
 
 STATICFILES_DIRS = [BASE_DIR / 'static']
 
-
+STATIC_ROOT = 'assets'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
