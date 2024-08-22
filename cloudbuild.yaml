@@ -1,9 +1,10 @@
 steps:
+# Build the container image
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['build', '-t', 'europe-southwest1-docker.pkg.dev/${PROJECT_ID}/tercera-juventud-django/tercera-juventud-django:latest', '.']
+  args: ['build', '-t', '$LOCATION-docker.pkg.dev/$PROJECT_ID/tercera-juventud-django/tercera-juventud-django', '.']
 
 - name: 'gcr.io/cloud-builders/docker'
-  args: [ 'push', '-a', 'europe-southwest1-docker.pkg.dev/${PROJECT_ID}/docker/tercera-juventud-django']
-  
+  args: ['push', '$LOCATION-docker.pkg.dev/$PROJECT_ID/tercera-juventud-django/tercera-juventud-django:latest']
+
 options:
   logging: CLOUD_LOGGING_ONLY

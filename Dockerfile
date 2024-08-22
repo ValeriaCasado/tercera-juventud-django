@@ -1,6 +1,6 @@
-FROM python:3.11.4-slim-buster
+FROM python:3.12-slim-bullseye
 
-EXPOSE 8000
+EXPOSE $PORT
 
 WORKDIR /app 
 
