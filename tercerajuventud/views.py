@@ -1,14 +1,14 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from django.template import loader
+from django.shortcuts import render 
 
 import os
 
 
 def inicio(request):
-    debug_mode = os.environ.get('DJANGO_DEBUG')
-    if debug_mode:
-        return HttpResponse('All good in the hood')
-    return HttpResponse("No environ variable detected ")
+
+    return render(request, 'index.html')
 
 
 def proyectos(request):
