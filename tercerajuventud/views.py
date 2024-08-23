@@ -7,13 +7,12 @@ import os
 
 
 def inicio(request):
-
     return render(request, 'index.html')
 
 
 def proyectos(request):
-    return HttpResponse("Proyectos")
+    return HttpResponse("proyectos")
 
 
 def info(request):
-    return HttpResponse("Info")
+    return render(request, 'info.html')
