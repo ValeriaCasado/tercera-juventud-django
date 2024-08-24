@@ -689,7 +689,7 @@ button {
 .contact_box {
     width: 100%;
     float: left;
-    background-color: #f1fafb;
+    background-color: #fff0e5;
     height: auto;
     padding: 30px;
 }
@@ -896,10 +896,10 @@ button {
 }
 
 .Useful_text {
-    width: 50%;
+    width: 90%;
     color: #d6d6d6;
     font-size: 16px;
-    margin-left: 0px;
+    margin: 0px;
 }
 
 .Enter_text {

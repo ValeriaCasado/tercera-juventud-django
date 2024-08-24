@@ -6,13 +6,14 @@ from django.shortcuts import render
 import os
 
 
-def inicio(request):
-    return render(request, 'index.html')
+
+# def inicio(request):
+#     return render(request, 'index.html')
 
 
-def proyectos(request):
-    return HttpResponse("proyectos")
+# def proyectos(request):
+#     return render(request, 'proyectos.html')
 
 
-def info(request):
-    return render(request, 'info.html')
+# def info(request):
+#     return render(request, 'info.html')

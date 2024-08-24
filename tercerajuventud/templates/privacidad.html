@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+   <head>
+   <title>Tercera Juventud</title>
+   {% include 'blocks/links.html' with active_tab='proyectos' %}
+   </head>
+   <body>
+      <!-- header section start -->
+      {% include "blocks/navigation_bar.html" %}
+      <!-- header section end -->
+      <!-- La asociacion start-->
+      <div class="container">
+        <p>Coming Soon...</p>
+      </div>
+      <!-- footer section start -->
+      {% include 'blocks/footer.html' %}
+      <!-- Javascript files-->
+      <script src="{% static 'js/jquery.min.js' %}"></script>
+      <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+      <script src="{% static 'js/jquery-3.0.0.min.js' %}"></script>
+      <script src="{% static 'js/plugin.js' %}"></script>
+      <!-- javascript -->
+   </body>
+</html>
