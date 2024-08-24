@@ -3,8 +3,14 @@ steps:
 - name: 'gcr.io/cloud-builders/docker'
   args: ['build', '-t', '$LOCATION-docker.pkg.dev/$PROJECT_ID/tercera-juventud-django/tercera-juventud-django', '.']
 
+# Push to container registry
 - name: 'gcr.io/cloud-builders/docker'
   args: ['push', '$LOCATION-docker.pkg.dev/$PROJECT_ID/tercera-juventud-django/tercera-juventud-django:latest']
+
+# Deploy container image to Cloud Run
+- name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+  entrypoint: gcloud
+  args: ['run', 'deploy', 'tercera-juventud-django', '--image', '$LOCATION-docker.pkg.dev/$PROJECT_ID/tercera-juventud-django/tercera-juventud-django', '--region', '$LOCATION']
 
 options:
   logging: CLOUD_LOGGING_ONLY
