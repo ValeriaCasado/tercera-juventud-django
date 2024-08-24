@@ -27,7 +27,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.getenv('DJANGO_SECRET_KEY') ## TODO: Need to pass this to docker somehow
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = os.getenv('DJANGO_DEBUG') == 'True' if os.getenv('DJANGO_DEBUG') else False
 
 ALLOWED_HOSTS = ['*']
 
