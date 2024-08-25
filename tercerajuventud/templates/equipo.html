@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+   <head>
+   <title>Tercera Juventud</title>
+   {% include 'blocks/links.html' with active_tab='proyectos' %}
+   </head>
+   <body>
+      <!-- header section start -->
+      {% include "blocks/navigation_bar.html" %}
+      <!-- header section end -->
+      <!-- Órganos start -->
+      <hr class="hr">
+      <div class="container">
+         <h1 class="health_taital">1. La Asamblea General</h1>
+         <p>Lorem ipsum dolor sit amet, id quo eruditi eloquentiam. Assum decore te sed. Elitr scripta ocurreret qui ad.</p>
+         <p>Foto en grupo, info, etc. </p>
+      </div>
+      <hr class="hr">
+      <!-- Órganos end -->
+      <!-- Junta start -->
+      <div class="container text-center">
+         <h1 class="health_taital">2. La Junta Directiva</h1>
+            Hay que centrar este texto
+            <p>La Asamblea General es el órgano supremo de la Asociación, integrado por todos
+            los socios, que adoptará sus acuerdos bajo el principio democrático de mayorías de
+            los votos válidamente emitidos.</p>
+      </div>
+
+      <!-- Junta end -->
+      <!-- Personas start -->
+      <div class="container">
+         <div class="social-box">
+             <div class="container">
+                 <div class="row">
+                  <div class="col-sm-6 col-lg-3 text-center">
+                     <div class="box">
+                         <img src="{% static 'images/img-2.png' %}">
+                        <div class="box-title p-3">
+                           <h3>Presidenta</h3>
+                        </div>
+                        <h5>Rocío Marta Fontanillo López</h5>
+                        <span class="text-center">Lorem ipsum dolor sit amet, id quo eruditi eloquentiam. Assum decore te sed. Elitr scripta ocurreret qui ad.</span>
+                        <div class="box-btn mt-3">
+                           {% with facebook='/' instagram='instagram' linkedin=''%}
+                              {% include "blocks/socials.html" %}
+                           {% endwith %}
+                        </div>
+                      </div>
+                  </div>	  
+                  
+                   <div class="col-sm-6 col-lg-3 text-center">
+                     <div class="box">
+                         <img src="{% static 'images/img-2.png' %}">
+                        <div class="box-title p-3">
+                           <h3>Vice Presidenta</h3>
+                        </div>
+                        <h5>Luz Melián Hernández</h5>
+                        <span class="text-center">Lorem ipsum dolor sit amet, id quo eruditi eloquentiam. Assum decore te sed. Elitr scripta ocurreret qui ad.</span>
+                        <div class="box-btn mt-3">
+                           {% with facebook='/' instagram='instagram' linkedin=''%}
+                              {% include "blocks/socials.html" %}
+                           {% endwith %}
+                        </div>
+                      </div>
+                  </div>	 
+                  
+                  <div class="col-sm-6 col-lg-3 text-center">
+                     <div class="box">
+                         <img src="{% static 'images/img-2.png' %}">
+                        <div class="box-title p-3">
+                           <h3>Secretaria</h3>
+                        </div>
+                        <h5>Zenaida del Pino Hernández González</h5>
+                        <span class="text-center">Lorem ipsum dolor sit amet, id quo eruditi eloquentiam. Assum decore te sed. Elitr scripta ocurreret qui ad.</span>
+                        <div class="box-btn mt-3">
+                           {% with facebook='/' instagram='instagram' linkedin=''%}
+                              {% include "blocks/socials.html" %}
+                           {% endwith %}
+                        </div>
+                      </div>
+                  </div>	  
+                  
+                  <div class="col-sm-6 col-lg-3 text-center">
+                     <div class="box">
+                         <img src="{% static 'images/img-2.png' %}">
+                        <div class="box-title p-3">
+                           <h3>Tesorera</h3>
+                        </div>
+                        <h5>Lucía Cobos Fuentes</h5>
+                        <span class="text-center">Lorem ipsum dolor sit amet, id quo eruditi eloquentiam. Assum decore te sed. Elitr scripta ocurreret qui ad.</span>
+                        <div class="box-btn mt-3">
+                           {% with facebook='/' instagram='instagram' linkedin=''%}
+                              {% include "blocks/socials.html" %}
+                           {% endwith %}
+                        </div>
+                      </div>
+                  </div>	 	 
+               </div>		
+             </div>
+         </div>
+      </div>
+      <!-- Personas end -->
+      <!-- footer section start -->
+      {% include 'blocks/footer.html' %}
+      <!-- Javascript files-->
+      <script src="{% static 'js/jquery.min.js' %}"></script>
+      <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+      <script src="{% static 'js/jquery-3.0.0.min.js' %}"></script>
+      <script src="{% static 'js/plugin.js' %}"></script>
+      <!-- javascript -->
+   </body>
+</html>

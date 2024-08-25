@@ -4,8 +4,8 @@ from django.shortcuts import render
 
 urlpatterns = [ 
     path('', lambda x: render(x, 'index.html'), name='inicio'),
-    path('proyectos', lambda x: render(x, 'proyectos.html'), name='proyectos'),
+    path('actividades', lambda x: render(x, 'actividades.html'), name='actividades'),
     path('informacion', lambda x: render(x, 'info.html'), name='informacion'),
-    path('privacidad', lambda x: render(x, 'privacidad.html'), name='privacidad'),
+    path('equipo', lambda x: render(x, 'equipo.html'), name='equipo'),
     path('contacto', lambda x: render(x, 'contacto.html'), name='contacto')
 ]

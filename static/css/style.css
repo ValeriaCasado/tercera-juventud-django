@@ -371,11 +371,9 @@ button {
 }
 
 .health_text {
-    width: 100%;
     float: left;
     font-size: 16px;
     color: #252525;
-    margin: 0px;
 }
 
 .health_section_2 {
@@ -573,13 +571,9 @@ button {
 .news_section {
     width: 100%;
     float: left;
-    padding-bottom: 90px;
+    padding: 5px;
 }
 
-.news_section_2 {
-    width: 100%;
-    float: left;
-}
 
 .box_main {
     width: 100%;
@@ -985,4 +979,34 @@ input.Enter_text::placeholder {
 
 .margin_90 {
     margin: 90px 0px;
+}
+
+/* team section */
+.social-box .box {
+    background: #FFF;
+    border-radius: 10px; 
+    cursor: pointer;
+    margin: 20px 0;
+    padding: 40px 10px;
+    transition: all 0.5s ease-out;
+}
+
+.social-box .box:hover {
+   box-shadow: 0 0 6px #e69f34;
+}
+
+.social-box .box-text {
+    font-size: 15px;
+    line-height: 30px;
+    margin: 20px 0;
+}
+
+.social-box .box-btn a {
+    color: #e69f34;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.social-box .fa {
+    color: #e69f34;
 }

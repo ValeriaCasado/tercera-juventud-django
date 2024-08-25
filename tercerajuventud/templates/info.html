@@ -10,92 +10,82 @@
       {% include "blocks/navigation_bar.html" %}
       <!-- header section end -->
       <!-- La asociacion start-->
+      <br>
       <div class="container">
-         <div class="news_section_2 layout_padding">
-            <h1 class="health_taital">La Asociación</h1>
-            <div class="row">
-               <div class="col-lg-9 col-sm-6 pb-2">
-                  <p class="health_text">La <b>Asociación Juvenil Tercera Juventud</b> es una asociación sin ánimo de lucro y de
-                  carácter autonómica, fundada en el año 2024 por la iniciativa altruista de cuatro
-                  jóvenes canarias comprometidas con su entorno social y familiar.</p>
-                 
-                  <h3 class="layout_padding">
-                     <img class='mr-3' width='50' src="{% static 'images/quote-icon.png' %}">
-                        Manos Jóvenes, Corazones Sabios
-                     <img class='ml-3' width='50' src="{% static 'images/quote-icon-down.png' %}">
-                  </h3>
-               </div>
-               <div class="col-lg-3 col-sm-4">
-                  <div class="">
-                     <div class="icon_1"><img src="{% static 'images/img-1.png' %}"></div>
-                  </div>
-               </div>
+         <h1 class="health_taital">La Asociación</h1>
+         <div class="row">
+            <div class="col-lg-9 col-sm-6">
+               <p class="health_text mb-3">La <b>Asociación Juvenil Tercera Juventud</b> es una asociación sin ánimo de lucro y de
+               carácter autonómica, fundada en el año 2024 por la iniciativa altruista de cuatro
+               jóvenes canarias comprometidas con su entorno social y familiar.</p>
+               <h3>
+                  <img class='mr-1' width='7%' src="{% static 'images/quote-icon.png' %}">
+                     Manos Jóvenes, Corazones Sabios
+                  <img class='ml-1' width='7%' src="{% static 'images/quote-icon-down.png' %}">
+               </h3>
+            </div>
+            <div class="col-lg-3 col-sm-4">
+                  <div class="icon_1"><img src="{% static 'images/img-1.png' %}"></div>
             </div>
          </div>
       </div>
       <!-- La asociacion end -->
-      <!-- Nuestra Historia start -->
-      <div class="news_section layout_padding">
-         <div class="container">
-
-            <h1 class="health_taital">Nuestra Misión</h1>
-            <p class="health_text">Tender lazos entre las generaciones más jóvenes y mayores de
-               nuestra sociedad canaria, habida cuenta el valioso desarrollo personal y moral que
-               este intercambio generacional origina en sendos sectores de nuestra comunidad.
-               
-               Además, estamos fuertemente comprometidos con la mejora de la calidad de vida
-               de las personas mayores, haciendo especial hincapié en aquellas que, por desgracia,
-               se sienten solas. Nuestro objetivo es acompañarles y hacerles sentirse valoradas y
-               apoyadas en todo momento.</p>
-
+      <!-- Nuestra Misión start -->
+      <div class="container">
+         <h1 class="health_taital">Nuestra Misión</h1>
+         <p class="health_text">Tender lazos entre las generaciones más jóvenes y mayores de
+            nuestra sociedad canaria, habida cuenta el valioso desarrollo personal y moral que
+            este intercambio generacional origina en sendos sectores de nuestra comunidad. </p>
+         <br>
+         <p class="health_text">Además, estamos fuertemente comprometidos con la mejora de la calidad de vida
+            de las personas mayores, haciendo especial hincapié en aquellas que, por desgracia,
+            se sienten solas. Nuestro objetivo es acompañarles y hacerles sentirse valoradas y
+            apoyadas en todo momento.</p>
+         <div class="row">
+            <div class="col-sm">
+               <div class="image_1"><img src="{% static 'images/old-people-drawing-1.jpg' %}"></div>
+            </div>
+            <div class="col-sm m-2">
+               <h1>Nuestros valores</h1>
+               <ul class="list-group list-group-flush">
+                  <li class="list-group-item list-group-item-action">
+                     <img class='icon_valores' src="{% static 'images/gratitud.svg' %}">
+                     Tolerancia
+                  </li>
+                  <li class="list-group-item list-group-item-action">
+                     <img class='icon_valores' src="{% static 'images/igualdad.svg' %}">
+                     Igualdad de Género
+                  </li>
+                  <li class="list-group-item list-group-item-action">
+                     <img class='icon_valores' src="{% static 'images/empatia.svg' %}">
+                     Empatía
+                  </li>
+                  <li class="list-group-item list-group-item-action">
+                     <img class='icon_valores' src="{% static 'images/respeto.svg' %}">
+                     Respeto
+                  </li>
+                  <li class="list-group-item list-group-item-action">
+                     <img class='icon_valores' src="{% static 'images/solidaridad.svg' %}">
+                     Solidaridad
+                  </li>
+                  <li class="list-group-item list-group-item-action">
+                     <img class='icon_valores' src="{% static 'images/responsabilidad.svg' %}">
+                     Responsabilidad
+                  </li>
+                  <li class="list-group-item list-group-item-action">
+                     <img class='icon_valores' src="{% static 'images/compromiso.svg' %}">
+                     Compromiso
+                  </li>
+                  <li class="list-group-item list-group-item-action">
+                     <img class='icon_valores' src="{% static 'images/tolerancia.svg' %}">
+                     Tolerancia
+                  </li>
+               </ul>
+            </div>
          </div>
       </div>
+
       <!-- Nuestros Historia end -->
-      <!-- Nuestros Valores start -->
-      <div class="container">
-               <div class="row">
-                  <div class="col-md-6">
-                     <div class="image_1"><img src="{% static 'images/old-people-drawing-1.jpg' %}"></div>
-                  </div>
-                  <div class="col-md-6">
-                     <h1>Nuestros valores</h1>
-                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item list-group-item-action">
-                           <img class='icon_valores' src="{% static 'images/gratitud.svg' %}">
-                           Gratitud
-                        </li>
-                        <li class="list-group-item list-group-item-action">
-                           <img class='icon_valores' src="{% static 'images/igualdad.svg' %}">
-                           Igualdad de Género
-                        </li>
-                        <li class="list-group-item list-group-item-action">
-                           <img class='icon_valores' src="{% static 'images/empatia.svg' %}">
-                           Empatía
-                        </li>
-                        <li class="list-group-item list-group-item-action">
-                           <img class='icon_valores' src="{% static 'images/respeto.svg' %}">
-                           Respeto
-                        </li>
-                        <li class="list-group-item list-group-item-action">
-                           <img class='icon_valores' src="{% static 'images/solidaridad.svg' %}">
-                          Solidaridad
-                        </li>
-                        <li class="list-group-item list-group-item-action">
-                           <img class='icon_valores' src="{% static 'images/responsabilidad.svg' %}">
-                           Responsabilidad
-                        </li>
-                        <li class="list-group-item list-group-item-action">
-                           <img class='icon_valores' src="{% static 'images/compromiso.svg' %}">
-                           Compromiso
-                        </li>
-                        <li class="list-group-item list-group-item-action">
-                           <img class='icon_valores' src="{% static 'images/tolerancia.svg' %}">
-                           Tolerancia
-                        </li>
-                     </ul>
-                  </div>
-               </div>
-      </div>
       <!-- footer section start -->
       {% include 'blocks/footer.html' %}
       <!-- Javascript files-->
