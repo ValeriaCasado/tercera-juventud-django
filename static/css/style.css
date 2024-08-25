@@ -606,6 +606,15 @@ button {
     line-height: 95px;
 }
 
+.icon_valores {
+    width: 30px;
+    height: 30px;
+    float: left;
+    text-align: center;
+    margin-left: 3px;
+    margin-right: 5px;
+}
+
 .daily_text {
     width: 40%;
     margin: 0 auto;

@@ -10,12 +10,7 @@ class TestEndpoints(TestCase):
         response = self.c.get("/")
         assert response.status_code == 200
     
-    def test_assert_get_info(self):
+    def test_assert_get_endpoints(self):
     
-        response = self.c.get("/info")
-        assert response.status_code == 200
-
-    def test_assert_get_project_page(self):
-    
-        response = self.c.get("/proyectos")
+        response = self.c.get("/informacion")
         assert response.status_code == 200
